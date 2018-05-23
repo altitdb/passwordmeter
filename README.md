@@ -3,5 +3,5 @@
 ### Start
 
 ```java 
-java -jar password-checker.jar 
+java -jar password-meter.jar 
 ```
