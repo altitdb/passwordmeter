@@ -1,0 +1,24 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.2.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.2.1 http://maven.apache.org/xsd/assembly-2.2.1.xsd">
+	<id>password-meter</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <files>
+        <file>
+            <source>src/main/assembly/password-meter.properties</source>
+            <outputDirectory>/</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/assembly/README.md</source>
+            <outputDirectory>/</outputDirectory>
+        </file>
+        <file>
+            <source>target/password-meter.jar</source>
+            <outputDirectory>/</outputDirectory>
+        </file>
+    </files>
+</assembly>
